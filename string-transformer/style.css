@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    text-align: center;
+}
+
+.input{
+    width: 860px;
+    height: 40px;
+}
+
+input[placeholder="enter the sentence with spaces (alphanumeric)"]{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.output{
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 20px;
+}
+
+.case {
+     width: 860px;
+     min-height: 34px;
+     background-color: #F5F5DC;
+     position: relative;
+     padding: 12px;
+     font-size: 20px;
+    
+}
+
+
+.heading{
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    padding: 3px;
+    font-size: 14px;
+}
