@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+body{
+    min-height: 100vh;
+   background-color:hsl(218, 23%, 16%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.advice-generator{
+    max-width: 550px;
+    background-color:hsl(217, 19%, 24%) ;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    
+    
+}
+
+
+.advice-id{
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 1.4rem;
+}
+
+.advice-content{
+    color: hsl(193, 38%, 86%);
+    margin-bottom: 3rem;
+}
+
+.dice-icon{
+    width: 60px;
+    height: 60px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: auto;
+    top: 70px;
+    cursor: pointer;
+}
+
