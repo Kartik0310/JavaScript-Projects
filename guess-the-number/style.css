@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+input{
+    width: 250px;
+    height: 35px;
+}
+
+.start-btn{
+    width: 100px;
+    height: 40px;
+    background-color: cyan;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor:pointer ;
+   
+    
+}
+
+input[type= number]{
+    font-size: 1.5em;
+}
+
+.start-btn:disabled{
+    cursor: not-allowed;
+}
