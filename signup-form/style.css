@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsla(0, 100%, 74%, 0.96);
+    background-image: url('/designs/images/bg-intro-desktop.png');
+    padding: 1rem;
+}
+
+.first-container{
+    display: grid;
+    align-items: center;
+    
+}
+
+.content{
+    margin-inline: auto;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    line-height: 3rem;
+}
+
+.paragraph{
+    margin-top: 1.5rem;
+}
+
+.paragraph p{
+    color: whitesmoke;
+    font-size: 0.85rem;
+    
+}
+
+.subscription{
+    max-width: 540px;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 1px 0px;
+    margin-bottom: 1.5rem;
+}
+
+.second-container{
+  display: grid;
+  align-items: center;
+}
+
+.free{
+    font-weight: 600;
+}
+
+.form{
+    max-width: 540px;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 7px 1px 0px;
+}
+
+.inputfield{
+    border: 1px solid hsl(246, 25%, 77%);
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.3rem;
+}
+
+.input{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding-left: 0.6rem;
+}
+
+::placeholder{
+    color:  gray;
+    font-weight: 600;
+}
+
+.error-icon{
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+.error-message{
+    display: none;
+    color: hsl(0, 100%, 74%);
+    text-align: end;
+    margin-bottom: 1rem;
+}
+
+.button{
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 0.3rem;
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    box-shadow: rgb(56, 204, 140) -1px 4px 3px -2px, inset rgb(56, 204, 140) 1px 2px 1px 0px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 0.6rem;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+}
+
+.form p > span{
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 750;
+}
+
+.error .error-message{
+    display: block;
+}
+
+.error .error-icon{
+    visibility: visible;
+}
+
+.error .inputfield{
+    margin-bottom: 0;
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.error input[placeholder="Email Address"]{
+    color:hsl(0, 100%, 74%);
+    font-weight: 600;
+} 
+
+@media (width < 1024px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .content h2 {
+        font-size: 2rem;
+        color: whitesmoke;
+        line-height: 2.2rem;
+        text-align: center;
+    } 
+
+    .second-container{
+        margin-top: 1.2rem;
+      }
+}
+
+@media (width < 768px){
+
+    .content h2 {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        line-height: 1.8rem;
+        text-align: center;
+    } 
+    .paragraph p{
+        color: whitesmoke;
+        font-size: 0.6rem;
+        
+    }
+
+    .input{
+        font-size: 11px;
+       
+    }
+}
+
+@media (width < 400px){
+    .form{
+        padding: 1rem;
+    }
+}
