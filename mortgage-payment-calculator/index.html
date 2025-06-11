@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mortgage Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="parent-container">
+        <article class="first-child-container">
+          <div class="heading-container">
+            <p class="heading">Mortgage Calculator</p>
+            <div class="clear-all-container">
+              <p class="text clear-all">Clear All</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+
+          <div class="mortgage-amount-container box">
+            <p class="text">Mortgage Amount</p>
+          <div class="input-box">
+            <div class="input-content">
+              <p class="input-text">$</p>
+            </div>
+            <input type="number" name="input" id="input-amount" />
+          </div>
+          <p class="error">This field is required</p>
+          </div>
+
+
+        
+           <div class="term-interest-container">
+            <div class="mortgage-term-container box">
+              <p class="text">Mortgage Term</p>
+              <div class="input-box">
+                <input type="number" name="input-term" id="input-term" />
+                <div class="input-content">
+                  <p class="input-text">years</p>
+                </div>
+              </div>
+               <p class="error">This field is required</p>
+            </div>
+
+            <div class="mortgage-interest-container box">
+              <p class="text">Mortgage Interest</p>
+              <div class="input-box">
+                <input
+                  type="number"
+                  name="input-interest"
+                  id="input-interest"/>
+                <div class="input-content">
+                  <p class="input-text">%</p>
+                </div>
+              </div>
+               <p class="error">This field is required</p>
+            </div>
+          </div>
+         
+
+          <div class="mortgage-type-container">
+            <p class="text">Mortgage Type</p>
+          <div class="radio-button button-1">
+            <input type="radio" name="radio" id="repayment" value="Repayment" />
+            <label for="repayment">Repayment</label>
+          </div>
+          <div class="radio-button button-2">
+            <input type="radio" name="radio" id="interest" value="Interest" />
+            <label for="interest">Interest Only</label>
+          </div> 
+           <p class="error">This field is required</p>
+          </div>
+
+
+          <div class="calculate-button-container">
+            <img
+              src="/designs/assets/images/icon-calculator.svg"
+              alt="calculator-image"
+            />
+            <p>Calculate Repayments</p>
+          </div>
+        </article>
+
+        <article class="second-child-container">
+          <div class="empty-image-container">
+            <img src="/designs/assets/images/illustration-empty.svg" alt="" />
+            <p class="result-text">Results shown here</p>
+            <p class="instruction-text">
+              Complete the form and click “calculate repayments” to see what
+              your monthly repayments would be.
+            </p>
+          </div>
+
+          <div class="result-container">
+            <p class="result-text">Your results</p>
+            <p class="instruction-text">
+              Your results are shown below based on the information you
+              provided. To adjust the results, edit the form and click
+              “calculate repayments” again.
+            </p>
+
+            <div class="result-display-container">
+              <p class="monthly-content">Your monthly repayments</p>
+              <h2 class="monthly-value"></h2>
+              <hr>
+              <p class="total-text">Total you'll repay over the term</p>
+              <p class="total-value"></p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
